@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hocus Pocus</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-dark">
+        <section class="row p-5 justify-content-center">
+            <div class="col-12 text-danger text-center">
+                <h1 class="text-shadow henny-penny xl-text">Hocus Pocus, I put a spell on you!</h1>
+            </div>
+        </section>
+        <!-- place navbar here -->
+    </header>
+    <main class="container-fluid bg-image">
+        <section class="row p-2 justify-content-around text-center">
+            <div class="col-6 pt-5 px-5 pb-1 text-light">
+                <div class="card text-dark scoreboard justify-content-center">
+                    <h4 class="p-3">Souls Drained</h4>
+                    <h1 id="witch-score">0</h1>
+                </div>
+                <h2 class="text-shadow  henny-penny mt-4">Witches</h2>
+            </div>
+            <div class="col-6 pt-5 px-5 pb-1 text-light">
+                <div class="card text-dark scoreboard justify-content-center">
+                    <h4 class="p-3">Witches Foiled</h4>
+                    <h1 id="kid-score">0</h1>
+                </div>
+                <h2 class="text-shadow  henny-penny mt-4">Children</h2>
+            </div>
+        </section>
+        <section class="row justify-content-between text-center pb-5">
+            <div class="col-6">
+                <button id="witch-points" class="btn btn-primary ms-2" onclick="drainSouls()">Drain 1 Soul</button>
+                <button id="witch-points-5" class="btn btn-primary ms-2" onclick="drainSouls5()">Drain 5 Souls</button>
+            </div>
+            <div class="col-6">
+                <button id="kid-points" class="btn btn-primary ms-2" onclick="foilWitches()">Foil 1 Witch</button>
+                <button id="kid-points-3" class="btn btn-primary ms-2" onclick="foilWitches3()">Foil 3 Witches</button>
+            </div>
+        </section>
+        <section class="row p-2 pb-5 justify-content-center">
+            <div class="col-12 text-center">
+                <button class="btn btn-danger" onclick="restartGame()">Extinguish Candle 🕯</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="container-fluid">
+        <section class="row p-5 text-center bg-dark">
+            <div class="col-12 text-light henny-penny">
+                <h1>Great game!</h1>
+            </div>
+        </section>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="/main.js"></script>
+</body>
+
+</html>

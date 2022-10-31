@@ -1,0 +1,21 @@
+.bg-image {
+    background-image: url("/witches-pic.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px black;
+}
+
+.henny-penny {
+    font-family: 'Henny Penny', cursive;
+}
+
+.xl-text {
+    font-size: 52px;
+}
+
+.scoreboard {
+    min-height: 250px;
+}
